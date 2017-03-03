@@ -1,0 +1,25 @@
+<% include headerUser %>
+
+</br>
+
+<h1 style="text-align: center;">Welcome <%= username %></h1>
+
+<h2>Images</h2>
+
+<form action="/image" method="post" enctype="multipart/form-data">
+  Add Image:<br>
+  <input type="file" name="myImage">
+  <input type="submit" name="submit" value="submit">
+</form>
+
+<h2>Links</h2>
+
+
+<form action="/link" method="post">
+  Link:<br>
+  <input type="link" name="link" value="">
+  <br>
+  <button type="submit" name="Submit" value="Submit">Submit</button>
+</form>
+
+<% include footer %>
